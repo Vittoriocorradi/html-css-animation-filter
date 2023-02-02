@@ -164,3 +164,26 @@ EFFETTI
         transform: rotate(-360deg);
     }
 }
+
+/* Esercizio 11 */
+
+.ex-11-icon:hover {
+    animation-name: circle-clockwise;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes circle-clockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    90% {
+        transform: rotate(315deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
