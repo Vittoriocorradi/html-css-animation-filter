@@ -48,6 +48,10 @@
 }
 .ex-10-icon {
     font-size: 60px;
+    animation-name: circle-counter-clockwise;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 .ex-11-icon {
     font-size: 60px;
@@ -147,4 +151,16 @@ EFFETTI
     filter: sepia(65%) contrast(80%);
     border-radius: 20px;
     transform: scale(1.5);
+}
+
+/* Esercizio 10 */
+
+@keyframes circle-counter-clockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
 }
