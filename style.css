@@ -187,3 +187,44 @@ EFFETTI
     }
 }
 
+/* Esercizio 12 */
+
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: top-white-move;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: bottom-white-move;
+}
+
+.ex-12-button:hover .ex-12-top-white,
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+}
+
+@keyframes top-white-move {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+
+    100% {
+        top: -10px;
+        left: calc(100% - 60px);
+    }
+}
+
+@keyframes bottom-white-move {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+
+    100% {
+        bottom: -10px;
+        right: calc(100% - 60px);
+    }
+}
