@@ -44,6 +44,7 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: filter 2s, transform 2s, border-radius 2s;
 }
 .ex-10-icon {
     font-size: 60px;
@@ -138,4 +139,12 @@ EFFETTI
 .ex-8-img:hover {
     filter: sepia(50%) saturate(60%);
     border-radius: 20px;
+}
+
+/* Esercizio 9 */
+
+.ex-9-img:hover {
+    filter: sepia(65%) contrast(80%);
+    border-radius: 20px;
+    transform: scale(1.5);
 }
