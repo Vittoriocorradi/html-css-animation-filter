@@ -190,11 +190,11 @@ EFFETTI
 /* Esercizio 12 */
 
 .ex-12-button:hover .ex-12-top-white {
-    animation-name: top-white-move;
+    animation-name: top-white-move-12;
 }
 
 .ex-12-button:hover .ex-12-bottom-white {
-    animation-name: bottom-white-move;
+    animation-name: bottom-white-move-12;
 }
 
 .ex-12-button:hover .ex-12-top-white,
@@ -205,7 +205,7 @@ EFFETTI
     animation-timing-function: linear;
 }
 
-@keyframes top-white-move {
+@keyframes top-white-move-12 {
     0% {
         top: -10px;
         left: 10%;
@@ -217,7 +217,7 @@ EFFETTI
     }
 }
 
-@keyframes bottom-white-move {
+@keyframes bottom-white-move-12 {
     0% {
         bottom: -10px;
         right: 20%;
@@ -226,5 +226,85 @@ EFFETTI
     100% {
         bottom: -10px;
         right: calc(100% - 60px);
+    }
+}
+
+/* Esercizio 13 */
+
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: top-white-move-13;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: bottom-white-move-13;
+}
+
+.ex-13-button:hover .ex-13-top-white,
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes top-white-move-13 {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+
+    27% {
+        top: -10px;
+        left: calc(100% - 30px);
+    }
+
+    42% {
+        top: calc(100% - 10px);
+        left: calc(100% - 30px);
+    }
+
+    77% {
+        top: calc(100% - 10px);
+        left: -20px;
+    }
+
+    92% {
+        top: -10px;
+        left: -20px;
+    }
+
+    100% {
+        top: -10px;
+        left: 10%;
+    }
+}
+
+@keyframes bottom-white-move-13 {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+
+    24% {
+        bottom: -10px;
+        right: calc(100% - 30px);
+    }
+
+    39% {
+        bottom: calc(100% - 10px);
+        right: calc(100% - 30px);
+    }
+
+    74% {
+        bottom: calc(100% - 10px);
+        right: -20px;
+    }
+
+    89% {
+        bottom: -10px;
+        right: -20px;
+    }
+
+    100% {
+        bottom: -10px;
+        right: 20%;
     }
 }
